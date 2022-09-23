@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+  <body>
+    <div id="list">
+      <h1>List of array</h1>
+      <h1>colors</h1>
+      <ol>
+        <li v-for="(color,index) in colors" :key="index">{{color}}</li>
+      </ol>
+      <h1>numbers</h1>
+      <ul>
+        <li v-for="(number,index) in numbers" :key="index">{{number}}</li>
+      </ul>
+      <h1>things</h1>
+      <ul>
+        <li v-for="(thing,index) in things" :key="index">{{thing}}</li>
+      </ul>
+      <h1>names</h1>
+      <ol>
+        <li v-for="(name,index) in names" :key="index">{{name}}</li>
+      </ol>
+      <h1>fruits</h1>
+      <ol>
+        <li v-for="(fruit,index) in fruits" :key="index">{{fruit}}</li>
+      </ol>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
